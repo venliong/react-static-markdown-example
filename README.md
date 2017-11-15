@@ -1,9 +1,7 @@
-# React-Static - Styled-Components Example
+# react-static-markdown-example
 
-This example includes:
-- Styled-Components
-- Image imports
-- File imports
-- Automatic Routing
+A basic react-static markdown example
 
-To get started, run `react-static create` and use the `styled-components` template.
+```bash
+yarn && yarn start
+```
