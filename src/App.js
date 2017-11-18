@@ -5,8 +5,6 @@ import styled, { injectGlobal } from 'styled-components'
 //
 import Routes from 'react-static-routes'
 
-const test = require('./test.md')
-
 injectGlobal`
   body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
@@ -54,7 +52,6 @@ export default () => (
         <Link to="/blog">Blog</Link>
       </nav>
       <div className="content">
-        <div dangerouslySetInnerHTML={{ __html: test }} />
         <Routes />
       </div>
     </AppStyles>

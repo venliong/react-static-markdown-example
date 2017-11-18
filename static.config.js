@@ -1,6 +1,8 @@
+import fs from 'fs'
 import axios from 'axios'
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
+import { markdown } from 'markdown'
 
 const marked = require('marked')
 
@@ -18,6 +20,9 @@ export default {
       {
         path: '/about',
         component: 'src/containers/About',
+        getProps: () => ({
+          markdown: markdown.toHTML(fs.readFileSync('./src/test.md', 'utf-8')),
+        })
       },
       {
         path: '/blog',
